@@ -10,14 +10,14 @@ processes = []
   builder = "paketobuildpacks/builder:base"
 
 [env]
-  PORT = "5001"
+  PORT = "8080"
 
 [experimental]
   auto_rollback = true
 
 [[services]]
   http_checks = []
-  internal_port = 5001
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
