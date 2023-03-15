@@ -1,0 +1,7 @@
+{% from 'macros.html' import stock_quote_link %}
+<h2>Your Portfolio</h2>
+<ul>
+  {%for ticker in ['AAPL', 'GOOG', 'META','TSLA'] %}
+  <li>View {{stock_quote_link(ticker)}}</li>
+  {% endfor %}
+</ul>
